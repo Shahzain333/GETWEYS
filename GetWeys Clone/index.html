@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Getweys Clone</title>
 </head>
@@ -25,6 +26,7 @@
         </div>
 
     </header>
+
     <!-- Navbar -->
     <nav id="navbar">
 
@@ -34,19 +36,100 @@
 
         <div class="nav">
             <ul>
-                <!-- <li><img src="./img/logo_getweys.webp" alt="Getweys Logo"></li> -->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li>
+                    <a href="#">Services<i class="fas fa-chevron-down"></i></a>
+                    <div class="submenu-1">
+                        <ul>
+                            <li>
+                                <a href="#">Development<i class="fas fa-chevron-down"></i></a>
+                                <div class="submenu-2">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Mobile App Development<i class="fas fa-chevron-down"></i></a>
+                                            <div class="submenu-3">
+                                                <ul>
+                                                    <li><a href="#">React Native App Development</a></li>
+                                                    <li><a href="#">Flutter App Development</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Web Development<i class="fas fa-chevron-down"></i></a>
+                                            <div class="submenu-3">
+                                                <ul>
+                                                    <li><a href="#">React Web Development</a></li>
+                                                    <li><a href="#">WordPress Development</a></li>
+                                                    <li><a href="#">PHP Development</a></li>
+                                                    <li><a href="#">WordPress Error Solving</a></li>
+                                                    <li><a href="#">Web Design for Female Entreprenurs</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Custom Software</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Graphic Designing</a></li>
+                            <li>
+                                <a href="#">Social Media<i class="fas fa-chevron-down"></i></a>
+                                <div class="submenu-2">
+                                    <ul>
+                                        <li><a href="#">Social Media Management</a></li>
+                                        <li><a href="#">Social Media Marketing</a></li>
+                                        <li><a href="#">Social Media Page <br/>Management</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">2D Animated video</a></li>
+                            <li><a href="#">2D/3D Modeling</a></li>
+                            <li><a href="#">Content Writing</a></li>
+                            <li>
+                                <a href="#">SEO<i class="fas fa-chevron-down"></i></a>
+                                <div class="submenu-2">
+                                    <ul>
+                                        <li><a href="#">SEO Services</a></li>
+                                        <li><a href="#">SEO Compitetor Analysis</a></li>
+                                        <li><a href="#">SEO On page</a></li>
+                                        <li><a href="#">SEO UI/UX Design</a></li>
+                                        <li><a href="#">SEO Audit and Assesment</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Advertisement</a></li>
+                            <li><a href="#">Getscan AI Scanner</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Offers<i class="fas fa-chevron-down"></i></a>
+                    <div class="submenu-1">
+                        <ul>
+                            <li><a href="#">Mom's Offer</a></li>
+                            <li><a href="#">Startup Package</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Pricing<i class="fas fa-chevron-down"></i></a>
+                    <div class="submenu-1">
+                        <ul>
+                            <li><a href="#">Web Development<br/> pricing</a></li>
+                            <li><a href="#">App Development<br/> pricing</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
 
         <div class="right">
             
-            <a href="#" class="schedule">Schedule Consultation</a>        
+            <button href="#" class="schedule">Schedule Consultation</button>        
             
-            <div class="hamburger">
+            <a class="hamburger" id="sidebarToggle">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -56,15 +139,150 @@
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            </a>
 
         </div>
-        
-        <!-- <div class="humburger"></div> -->
 
     </nav>
+
+    <!-- Desktop Sidebar -->
+    <div class="desktop-sidebar" id="desktopSidebar">
+        
+        <!-- Close Button -->
+        <a class="desktop-sidebar-close" id="closeDesktopSidebar">
+            <i class="fas fa-times"></i>
+        </a>
+        
+        <div class="desktop-sidebar-content">
+            
+            <div class="desktopSidebar-logo">
+                <img src="./img/logo_getweys.webp" alt="Getweys Logo">
+            </div>
+
+            <div class="desktopSidebar-contact">
+                <a href="tel:+923000184999">+92-300-018-4999</a>
+                <p>OR</p>
+                <a href="mailto:info@getweys.com">info@getweys.com</a>
+            </div>
+
+            <div class="desktopSidebar-social">
+                
+                <p class="desktopSidebar-follow">Follow Us On:</p>
+                
+                <div class="desktopSidebar-socialIcons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        
+        <div class="mobile-sidebar-header">
+        
+            <div class="logo">
+                <img src="./img/logo_getweys.webp" alt="Getweys Logo">
+            </div>
+        
+            <button class="close-sidebar" id="closeSidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        
+        </div>
+        
+        <div class="mobile-sidebar-content">
+        
+            <ul class="mobile-sidebar-menu">
+                
+                <li><a href="#" class="active">Home</a></li>
+                <li>
+                    <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-sidebar-submenu-1">
+                        <li>
+                            <a href="#">Development <i class="fas fa-chevron-down"></i></a>
+                            <ul class="mobile-sidebar-submenu-2">
+                                <li>
+                                    <a href="#">Mobile App Development <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="mobile-sidebar-submenu-3">
+                                        <li><a href="#">React Native App Development</a></li>
+                                        <li><a href="#">Flutter App Development</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Web Development <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="mobile-sidebar-submenu-3">
+                                        <li><a href="#">React Web Development</a></li>
+                                        <li><a href="#">WordPress Development</a></li>
+                                        <li><a href="#">PHP Development</a></li>
+                                        <li><a href="#">WordPress Error Solving</a></li>
+                                        <li><a href="#">Web Design for Female Entreprenurs</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Custom Software</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Graphic Designing</a></li>
+                        <li>
+                            <a href="#">Social Media <i class="fas fa-chevron-down"></i></a>
+                            <ul class="mobile-sidebar-submenu-2">
+                                <li><a href="#">Social Media Management</a></li>
+                                <li><a href="#">Social Media Marketing</a></li>
+                                <li><a href="#">Social Media Page Management</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">2D Animated video</a></li>
+                        <li><a href="#">2D/3D Modeling</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li>
+                            <a href="#">SEO <i class="fas fa-chevron-down"></i></a>
+                            <ul class="mobile-sidebar-submenu-2">
+                                <li><a href="#">SEO Services</a></li>
+                                <li><a href="#">SEO Compitetor Analysis</a></li>
+                                <li><a href="#">SEO On page</a></li>
+                                <li><a href="#">SEO UI/UX Design</a></li>
+                                <li><a href="#">SEO Audit and Assesment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Advertisement</a></li>
+                        <li><a href="#">Getscan AI Scanner</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Offers <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-sidebar-submenu-1">
+                        <li><a href="#">Mom's Offer</a></li>
+                        <li><a href="#">Startup Package</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Pricing <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-sidebar-submenu-1">
+                        <li><a href="#">Web Development pricing</a></li>
+                        <li><a href="#">App Development pricing</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
     <!-- Hero Section -->
-    <section class="section container">
+    <!-- <section class="section container">
         
         <div class="hero">
             
@@ -83,8 +301,8 @@
         
         </div>
 
-    </section>
+    </section> -->
 
-
+    <script src="./script.js"></script>
 </body>
 </html>
