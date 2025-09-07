@@ -26,6 +26,22 @@ function resetMobileSidebar() {
     });
 }
 
+// Sticky navbar with transition
+window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    const header = document.getElementById('main-header');
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > header.offsetHeight) {
+        header.style.transform = 'translateY(-100%)'; // hide header
+        navbar.classList.add('sticky');
+    } else {
+        header.style.transform = 'translateY(0)'; // show header again
+        navbar.classList.remove('sticky');
+    }
+});
+
+
 // Toggle sidebar based on screen size
 sidebarToggle.addEventListener('click', function() {
     if (window.innerWidth >= 769) {
@@ -72,8 +88,12 @@ document.addEventListener('keydown', function(e) {
 window.addEventListener('resize', function() {
     // If resizing to a different size, close any open sidebars
     if ((window.innerWidth >= 769 && mobileSidebar.classList.contains('open')) ||
-        (window.innerWidth < 769 && desktopSidebar.classList.contains('open'))) {
+        (window.innerWidth < 769 && desktopSidebar.classList.contains('open')) || 
+        (window.innerWidth >= 425 && mobileSidebar.classList.contains('open')) || 
+        (window.innerWidth < 425 && mobileSidebar.classList.contains('open'))) {
+
         closeAllSidebars();
+    
     }
 });
 
@@ -126,6 +146,7 @@ document.querySelectorAll('.mobile-sidebar-submenu-1 > li').forEach(item => {
 
 // Toggle nested submenus in mobile sidebar (level 3)
 document.querySelectorAll('.mobile-sidebar-submenu-2 > li').forEach(item => {
+    
     const link = item.querySelector('a');
     const submenu = item.querySelector('.mobile-sidebar-submenu-3');
     
