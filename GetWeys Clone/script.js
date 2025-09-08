@@ -41,7 +41,6 @@ window.addEventListener('scroll', function () {
     }
 });
 
-
 // Toggle sidebar based on screen size
 sidebarToggle.addEventListener('click', function() {
     if (window.innerWidth >= 769) {
