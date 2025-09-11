@@ -166,4 +166,5 @@ document.querySelectorAll('.mobile-sidebar-submenu-2 > li').forEach(item => {
             item.classList.toggle('active');
         });
     }
+    
 });
