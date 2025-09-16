@@ -939,6 +939,23 @@ section {
     display: none;
 }
 
+/* ===== Badge Section ===== */
+.badge-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 0 70px;
+    margin-top: -25px;
+}
+
+.badge-bottom img {
+    width: 18%;
+}
+
+.badge-bottom img:nth-child(2){
+    width: 19%;
+}
+
 /* ===== FOOTER ===== */
 footer {
     background-color: #1a1a1a;
@@ -1253,6 +1270,18 @@ footer {
     .portfolio-card {
         height: 300px;
     }
+    .badge-bottom { 
+        padding: 0 15px;
+        margin-top: 0px;
+    }
+    .badge-bottom img {
+        width: 25%;
+    }
+
+    .badge-bottom img:nth-child(2){
+        width: 26%;
+    }
+
     
     /* Tablet size adjustments (481px to 768px) */
     @media (min-width: 481px) {
