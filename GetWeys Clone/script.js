@@ -562,4 +562,29 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// ========================= FAQS ===============================================
+const accordians = document.querySelectorAll('.accordions');
+
+accordians.forEach( (accordian) => {
+    
+    const icon = accordian.querySelector('.icon');
+    const question = accordian.querySelector('.question');
+    const answer = accordian.querySelector('.answer');
+
+    question.addEventListener('click', () =>{
+        // Toggle active state
+        answer.classList.toggle("active");
+
+        // Change plus to minus
+        if (icon.classList.contains("fa-plus")) {
+            icon.classList.remove("fa-plus");
+            icon.classList.add("fa-minus");
+        } else {
+            icon.classList.remove("fa-minus");
+            icon.classList.add("fa-plus");
+        }
+    });
+});
+
+
 
