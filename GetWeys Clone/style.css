@@ -1017,7 +1017,7 @@ section {
     cursor: pointer;
 }
 
-.icon {
+.question .icon {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -567,7 +567,7 @@ const accordians = document.querySelectorAll('.accordions');
 
 accordians.forEach( (accordian) => {
     
-    const icon = accordian.querySelector('.icon');
+    const icon = accordian.querySelectorAll('.qustion .icon');
     const question = accordian.querySelector('.question');
     const answer = accordian.querySelector('.answer');
 
