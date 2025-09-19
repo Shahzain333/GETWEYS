@@ -734,6 +734,65 @@
     </section>
 
     <!-- Form Section -->
+    <section class="form-section">
+        
+        <div class="Top-selling-top service-top">
+            <h4 class="">Get in Touch</h4>
+            <h1 class="service-tag">Get a Quote</h1>
+        </div>
+
+        <div class="contact-form">
+            
+            <form class="quote-form">
+            
+                <div class="form-group form-name-email">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+
+                <div class="form-group form-phone-select">
+                    
+                    <input type="tel" placeholder="Your Phone Number" required>
+                   
+                    <select required>
+                        <option value="">Interested In</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile App Development</option>
+                        <option value="design">UI/UX Design</option>
+                        <option value="seo">SEO Services</option>
+                    </select>
+                    
+                </div>
+
+                <div class="form-group">
+                    <textarea placeholder="How can we help you?" required></textarea>
+                </div>
+
+                <div class="recaptcha">
+                    
+                    <label class="recaptcha-check">
+                        <input class="recaptcha-input" type="checkbox" required>
+                        I'm not a robot
+                    </label>
+
+                    <!-- reCAPTCHA widget -->
+                    <!-- <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div> -->
+
+                    
+                    <div class="privacy-terms">
+                        <a href="https://policies.google.com/privacy" target="_blank">Privacy</a> -
+                        <a href="https://policies.google.com/terms" target="_blank">Terms</a>
+                    </div>
+                
+                </div>
+
+                <button type="submit" class="about-btn">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -851,6 +910,9 @@
         </div>
         
     </footer>
+
+    <!-- Load Google reCAPTCHA API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!-- Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
