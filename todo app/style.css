@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 100vh; */
+}
+
+.container {
+    position: absolute;
+    top: 5%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    /* margin-bottom: 100px; */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box-container input {
+    width: 70%;
+    height: 40px;
+    font-size: 1.01rem;
+    padding: 10px;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+#add-tsk-btn {
+    width: 25%;
+    padding: 10px;
+    font-size: 1.01rem;
+    background-color: #6200ea;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-tsk-btn:hover {
+    background-color: #3700b3;
+}
+
+/* .todo-list {
+    width: 100%;
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    /* width: 100%; */
+    background: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+li span {
+    text-align: start;
+    flex: 1;                      /* take available space */
+    word-wrap: break-word;        /* legacy support */
+    overflow-wrap: anywhere;      /* modern support */
+    white-space: normal;          /* allow multiple lines */
+    margin-right: 10px;           /* space before buttons */
+}
+
+li.completed span {
+    text-decoration: 2px line-through #000;
+    color: #000;
+}
+  
+.task-btn {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;               /* prevent buttons from shrinking */
+}
+
+.task-btn button {
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+ul li .del-btn {
+    background-color: #dc3545;   
+}
+
+ul li .edit-btn {
+    background-color: #007bff;
+}
+
+ul li .edit-btn:hover {
+    background-color: #0056b3;
+}
+
+ul li .del-btn:hover {
+    background-color: #c82333;
+}
+
+.task-check {
+    display: inline-flex;
+    gap: 7px;
+}
+
+ul  li .checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255,255,255,0.3);
+    background: transparent;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+ul  li .checkbox:checked {
+    background: #000;
+    color: #fff;
+}
+
+ul  li .checkbox:checked::before {
+    content: '\2713';
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .box-container input {
+        width: 60%;
+    }
+
+    #add-tsk-btn {
+        width: 35%;
+    }
+
+    .task-btn {
+        gap: 5px;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .task-btn button {
+        font-size: 0.7rem;
+        padding: 5px;
+    }
+}
